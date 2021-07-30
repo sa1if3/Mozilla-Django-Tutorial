@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 CSRF_COOKIE_SECURE = os.environ.get('DJANGO_CSRF_COOKIE_SECURE', '') != 'False'
 SESSION_COOKIE_SECURE = os.environ.get('DJANGO_SESSION_COOKIE_SECURE', '') != 'False'
 SECURE_HSTS_SECONDS = os.environ.get('DJANGO_SECURE_HSTS_SECONDS', '') != 'False'
-SECURE_SSL_REDIRECT = os.environ.get('DJANGO_SECURE_SSL_REDIRECT', '') != 'False'
+#SECURE_SSL_REDIRECT = os.environ.get('DJANGO_SECURE_SSL_REDIRECT', '') != 'False'
 SECURE_HSTS_INCLUDE_SUBDOMAINS = os.environ.get('DJANGO_SECURE_HSTS_INCLUDE_SUBDOMAINS', '') != 'False'
 SECURE_HSTS_PRELOAD = os.environ.get('DJANGO_SECURE_HSTS_PRELOAD', '') != 'False'
 # Quick-start development settings - unsuitable for production
