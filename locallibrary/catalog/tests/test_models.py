@@ -16,7 +16,7 @@ class AuthorModelTest(TestCase):
     def test_last_name_label(self):
         author = Author.objects.get(id=1)
         field_label = author._meta.get_field('last_name').verbose_name
-        self.assertEqual(field_label, 'last name')
+        self.assertEqual(field_label, 'lasty name')
 
     def test_date_of_death_label(self):
         author = Author.objects.get(id=1)
