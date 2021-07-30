@@ -26,6 +26,9 @@ jobs:
     - name: Run migrations
       run: |
         cd locallibrary && python manage.py migrate
+    - name: Run Tests
+      run: |
+        cd locallibrary && python manage.py test
     - uses: akhileshns/heroku-deploy@v3.12.12
       with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
