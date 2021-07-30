@@ -26,6 +26,9 @@ jobs:
     - name: Run migrations
       run: |
         cd locallibrary && python manage.py migrate
+    - name: Run collectstatic
+      run: |
+        cd locallibrary && python manage.py collectstatic --no-input
     - name: Run Tests
       run: |
         cd locallibrary && python manage.py test catalog
