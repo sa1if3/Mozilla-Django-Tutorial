@@ -147,7 +147,7 @@ STATIC_URL = '/static/'
 # https://warehouse.python.org/project/whitenoise/
 #This is failing a lot of template tests
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=500)
