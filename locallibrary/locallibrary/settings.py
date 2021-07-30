@@ -33,7 +33,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY','xs4e(gblixg6ryz6@3xo526mrwdaf^d
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = ['shielded-everglades-96716.herokuapp.com']
+ALLOWED_HOSTS = ['shielded-everglades-96716.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -145,7 +145,8 @@ STATIC_URL = '/static/'
 
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+#This is failing a lot of template tests
+#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=500)
