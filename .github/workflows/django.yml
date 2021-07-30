@@ -25,7 +25,8 @@ jobs:
         pip install -r requirements.txt
     - name: Run Tests
       run: |
-        python locallibrary/manage.py test
+        cd locallibrary
+        python manage.py test
     - uses: akhileshns/heroku-deploy@v3.12.12
       with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
